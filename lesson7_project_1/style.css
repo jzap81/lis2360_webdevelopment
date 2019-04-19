@@ -1,0 +1,157 @@
+@charset "UTF-8";
+/* CSS Document created by Jennifer Zappala, Spring 2019*/
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	line-height: 2em;
+	color: #2A363B;
+	background-color: #FECEA8;
+	padding: 0 40px;
+}
+
+/* basic text styles ----------------------------  */
+p, li, td {
+	letter-spacing: 0.1em;
+	padding: 0 40px;
+	color: #2A363B;
+}
+h1 {
+	font-size: 24px;
+	padding: 0 40px;
+	font-variant: small-caps;
+	letter-spacing: .5em;
+	line-height: 2em;
+	margin: 0;
+}
+h2 {
+	font-size: 20px;
+	padding: 0 40px;
+	font-variant: small-caps;
+	letter-spacing: 0.5em;
+	background-color: #FF847C;
+}
+h3 {
+	font-size: 17px;
+	letter-spacing: 0.5em;
+	border-bottom-width: 1px;
+	border-bottom-style: inset;
+	border-bottom-color: #E84A5F;
+	padding: 4px 0;
+	font-variant: small-caps;
+	font-style: italic;
+}
+
+/* link styles ---------------------------- */
+a:link {
+	font-weight: bold;
+	color: #E84A5F;
+	text-decoration: none;
+}
+a:visited {
+	font-weight: bold;
+	color: #E84A5F;
+	text-decoration: none;
+}
+a:hover {
+	color: #FFFF00;
+}
+
+/* list styles ----------------------------- */
+ul li {
+	list-style-image: url(images/star.png);
+	margin-left: 60px;
+	padding-left: 0px;
+}
+ol {
+	margin-left: 60px;
+}
+
+ol li {
+	padding-left: 0px;
+}
+
+/* table styles -------------------------------------- */
+table {
+	border: solid #E84A5F 1px;
+}
+td {
+	padding: 6px;
+	border: solid #E84A5F 1px;
+}
+th {
+	font-weight: bold;
+	background-color: #FF847C;
+	text-align: center;
+	padding: 6px;
+	border: solid #E84A5F 1px;
+}
+
+/* border styles ------------------------------------ */
+hr {
+	border: solid #FF847C 1px;
+}
+
+img {
+	/*border: solid #FF847C 1px;*/
+
+}
+
+iframe {
+	border: solid #FF847C 1px;
+	padding: 8px;
+	margin: 8px;
+}
+/* DIV STYLES FOR PAGE LAYOUT */
+
+#container {
+	width: 900px;
+	margin: 0 auto;
+	background-color: #fff;
+	overflow: hidden;
+}
+
+#header {
+	width: 100%;
+	background-color: #FF847C;
+	border-bottom: 1px solid #FF847C;
+	padding-bottom: 40px;
+}
+
+#content {
+	width: 600px;
+	float: left;
+	padding-bottom: 40px;
+}
+
+#sidebar {
+	width: 280px;
+	float: left;
+	margin-top: 50px;
+	margin-right: 20px;
+}
+
+#sidebar p{
+	padding: 10px;
+	background: #eee;
+	border: 1px solid #FF847C;
+	border-radius: 12px;
+	box-shadow: 10px 10px 5px #888;
+}
+
+#footer {
+	width: 100%;
+	background-color: #FF847C;
+	border-top: 1px solid #FF847C;
+	padding: 40px;
+	clear: both;
+}
+#footer p{
+	margin: 0;
+}
+
+#sidebar h1{
+	clear: both;
+}
