@@ -1,0 +1,32 @@
+@charset "UTF-8";
+/* CSS Document created by Jennifer Zappala, Spring 2019*/
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+#splash{
+    background-color: #ffffff;
+    height: 1000px;
+}
+
+#overview{
+    background-color: #5C5A61;
+    height: 1000px;
+}
+
+#video{
+    background-color: #ffffff;
+    height: 1000px;
+}
+
+#discography{
+    background-color: #d69787;
+    height: 1000px;
+}
+
+#footer{
+    background-color: #5c5a61;
+    height: 1000px;
+}
