@@ -116,8 +116,7 @@ iframe {
 #header {
 	width: 100%;
 	background-color: #FF847C;
-	border-bottom: 1px solid #FF847C;
-	padding-bottom: 40px;
+	padding: 0;
 }
 
 #content {
