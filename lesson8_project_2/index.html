@@ -1,0 +1,280 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+    <link rel="canonical" href="https://getbootstrap.com/docs/3.4/examples/carousel/">
+
+
+    <title>Carousel Template for Bootstrap</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/carousel.css" rel="stylesheet">
+  
+    <style>
+    /* Navigation bar alterations */
+      .navbar-inverse {
+        background-color: #F7B5AF; /*change navbar color to pink */
+        border-color: #F0948A;     /* navbar bordee to darker shadow */
+      }
+      .navbar-inverse .navbar-nav > li > a {
+        color: #FFEFF0;            /* change navbar button font color to light pink */
+      }
+      .navbar-inverse .navbar-brand {
+        color: #FFEFF0;            /* change title at left on navbar to pale pink */
+      }
+      @media (min-width: 768px) {
+        .navbar-wrapper .navbar {
+        border-radius: 30px;
+        }
+        .navbar-wrapper {
+          margin-top: 25px;
+        }
+      }
+      .carousel-inner > .item > img {
+        height: auto;
+      }
+      @media (max-width: 899px) {
+       .carousel {
+         height: 400px;
+         margin-bottom: 60px;
+       }
+       .carousel .item{
+         height: 400px;
+         background-color: #fff;
+       }
+      }
+      @media (max-width: 719px) {
+       .carousel-inner > .item > img {
+        width: 719px;
+        max-width: 719px;
+        height: 400px;
+       }  
+      }
+      .btn-primary {
+        color: #FFEFF0;            /* change image caption button font to pink */
+        background-color: #F7B5AF;        /* change image caption button to pink */
+        border-color: #F7B5AF;
+      }
+      .btn-primary:hover {
+        color: #fff;                   /* change image caption button font to white on hover */
+        background-color: #FFD9D8;
+        border-color: #F7B5AF;
+      }
+    </style>
+  
+  </head>
+<!-- NAVBAR
+================================================== -->
+  <body>
+    <div class="navbar-wrapper">
+      <div class="container">
+
+        <nav class="navbar navbar-inverse navbar-static-top">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#">Travel AFAR</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Location <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Europe</a></li>
+                    <li><a href="#">Mediterranean</a></li>
+                    <li><a href="#">South America</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+      </div>
+    </div>
+
+
+    <!-- Carousel
+    ================================================== -->
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+        <li data-target="#myCarousel" data-slide-to="3"></li>
+      </ol>
+      <div class="carousel-inner" role="listbox">
+        <div class="item active">
+          <img class="first-slide" src= "images/1blur.jpg" alt="First slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Copenhagen Travel Guide</h1>
+              <p>Copenhagen has become known for its excellent taste in everything from architecture, furniture design, decor, fashion, and --of course-- food.</p>
+              <p><a class="btn btn-lg btn-primary" href="#" role="button">Lets go!</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img class="second-slide" src= "images/3blur.jpg" alt="Second slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Florence Travel Guide</h1>
+              <p>There's an overwhelming number of reasons for the tourist migration to this tiny Italian city amid Tuscany's rolling green hills. One of them being that Florence is the home to more than one million works of Renaissance art-- among them Michelangelo's David and Botticelli's Birth of Venus. It's also the birthplace of global fashion brands such as Gucci, Pucci, and Roberto Cavalli. </p>
+              <p><a class="btn btn-lg btn-primary" href="#" role="button">Lets go!</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img class="third-slide" src= "images/2blur.jpg" alt="Third slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Rome Travel Guide</h1>
+              <p>Caput Mundi: Rome loves its ancient reputation as the capital of the world, and rightfully so. For more than two and a half millennia, the Eternal City has accumulated innumerable and incredible antiquities, and extraordinary and endless gallaries of Renaissance and Baroque art.</p>
+              <p><a class="btn btn-lg btn-primary" href="#" role="button">Lets go!</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img class="fourth-slide" src= "images/4blur.jpg" alt="Fourth slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Paris Travel Guide</h1>
+              <p>Paris needs no introduction. It's synonymous with food, culture, fashion, and architecture, rarely disappointing those who visit.</p>
+              <p><a class="btn btn-lg btn-primary" href="#" role="button">Lets go!</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div><!-- /.carousel -->
+
+
+    <!-- Marketing messaging and featurettes
+    ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+
+    <div class="container marketing">
+
+      <!-- Three columns of text below the carousel -->
+      <div class="row">
+        <div class="col-lg-4">
+          <img class="img-circle" src="images/5.png" alt="Generic placeholder image" width="140" height="140">
+          <h2>Places to Eat</h2>
+          <p>A one stop shop for list of the best restaurants in the most coveted cities around the world.</p>
+          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img class="img-circle" src="images/6.png" alt="Generic placeholder image" width="140" height="140">
+          <h2>Where to Shop</h2>
+          <p>A shopaholic's dream guide to shopping around the world.</p>
+          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img class="img-circle" src="images/7.png" alt="Generic placeholder image" width="140" height="140">
+          <h2>How to Get There</h2>
+          <p>Sometime's getting around in a new city can be very confusing. Get around like a local with each cities best kept secrets.</p>
+          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+         <div class="col-lg-4">
+          <img class="img-circle" src="images/8.png" alt="Generic placeholder image" width="140" height="140">
+          <h2>Sights to See</h2>
+          <p>Not sure where to go? Make sure you don't miss a thing with this archive of top tourist...and local hidden gems... from around the world.</p>
+          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+      </div><!-- /.row -->
+
+
+      <!-- START THE FEATURETTES -->
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">Featured Activity: <span class="text-muted">Skiing in Aspen</span></h2>
+          <p class="lead">At Aspen Mountain you can ski down the same runs that have hosted World Cup finals, ride through gladed powder stashes, chase after the snowcat-towed Oasis Champagne Bar, or put together one quad-burning top-to-bottom after another. And all of this is just steps away from downtown Aspen. No wonder this mountain is a legend.</p>
+        </div>
+        <div class="col-md-5">
+          <img class="featurette-image img-responsive center-block" src= "images/9.png" alt="Generic placeholder image">
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7 col-md-push-5">
+          <h2 class="featurette-heading">Hotel Spotlight: <span class="text-muted">Hotel Belvedere</span></h2>
+          <p class="lead">Stone walls surround this luxury hotel atop Rodari hill, and the boutique property is a hot spot for parties around the asymmetrical outdoor swimming pool. The mostly white rooms in the 1850 mansion, one of the oldest in the area, echo the white townscape below. But rooms and suites also have a touch of warmth and color with walnut closets and teal accents. There's air conditioning for the summer months, while in-floor heating keeps rooms comfortable during winter. Facilities include an on-site spa, 24-hour gym, and the outdoor Japanese restaurant Matsuhisa Mykonos, from world-renowned chef Nobu.</p>
+        </div>
+        <div class="col-md-5 col-md-pull-7">
+          <img class="featurette-image img-responsive center-block" src= "images/10.png" alt="Generic placeholder image">
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">Standout Food: <span class="text-muted">Azul Historico</span></h2>
+          <p class="lead">Located in the Downtown Mexixo hotel and retail complex in the Centro Historico neighborhood, the setting is atmospheric: rough-hewn wooden tables sit on a stone courtyard of the 17th-century building, surrounded by trees draped with lights. Nearby, women prepare tortillas by hand within the view of diners and servers baskets of the still warm tortillas to tables, where they'll accompany dishes such as cochinita pibil (pit-roasted pig that's made in the traditional style of the Yucatan Peninsula), and one of several moles, including one names Manchamanteles (literally: "tablecloth stainer"). The restaurant is a favorite among locals, who make reservations here for special celebrations and business meetings, as well as out-of-towners in the know.</p>
+        </div>
+        <div class="col-md-5">
+          <img class="featurette-image img-responsive center-block" src= "images/11.png" alt="Generic placeholder image">
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <!-- /END THE FEATURETTES -->
+
+
+      <!-- FOOTER -->
+      <footer>
+        <p class="pull-right"><a href="#">Back to top</a></p>
+        <p>&copy; 2017-19 Jennifer Zappala. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+      </footer>
+
+    </div><!-- /.container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
+    
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery.min.js"><\/script>');</script>
+    
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
+    
+    <script src="js/holder.min.js"></script>
+    
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>
